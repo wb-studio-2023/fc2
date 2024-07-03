@@ -1,0 +1,126 @@
+$mainFontColor: #373737;
+$inactiveFontColor: #cccccc;
+
+body {
+    main {
+        .detail {
+            color: $mainFontColor;
+            margin: 30px 0;
+
+            .explain {
+                display: flex;
+                margin: 0 0 30px;
+
+                .left {
+                    width: 200px;
+                    height: 200px;
+
+                    img {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+
+                .right {
+                    padding: 0 0 0 10px;
+                    position: relative;
+
+                    h3 {
+                        margin: 0 0 10px;
+                    }
+
+                    .tag {
+                        a {
+                            font-size: 12px;
+                            text-decoration: none;
+                            color: #fc6c85;
+                            border: 1px solid #fc6c85;
+                            border-radius: 5px;
+                            padding: 2px 2px;
+                            margin: 0 3px 1px 0;
+                            word-break: keep-all;
+                            line-height: 1.1rem;
+                            display: inline-block;
+
+                            &:hover {
+                                opacity: .8;
+                            }
+                        }
+                    }
+
+                    .affiliate_link {
+                        position: absolute;
+                        bottom: 0;
+
+                        a {
+                            width: 300px;
+                            background: #fc6c85;
+                            text-decoration: none;
+                            color: #ffffff;
+                            border-radius: 5px;
+                            font-weight: bold;
+                            padding: 2px 5px;
+                            border: 1px solid #fc6c85;
+
+                            &:hover {
+                                background: #ffffff;
+                                color: #fc6c85;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sample_movie {
+                margin: 0 0 45px;
+
+                .sample_movie_title {
+                    font-weight: bold;
+                    border-bottom: 1px solid #cccccc;
+                }
+
+                .movie {
+                    margin: 10px 0 0;
+                    text-align: center;
+                }
+            }
+
+            .sample_image {
+                margin: 0 0 35px;
+
+                .sample_image_title {
+                    font-weight: bold;
+                    border-bottom: 1px solid #cccccc;
+                }
+
+                .sample_image_image_area {
+                    margin: 10px 0 0;
+                    justify-content: center;
+
+                    .sample_image_image {
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            .link {
+                text-align: center;
+
+                a {
+                    background: #fc6c85;
+                    text-decoration: none;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    font-weight: bold;
+                    padding: 12px 15px;
+                    border: 1px solid #fc6c85;
+
+                    &:hover {
+                        background: #ffffff;
+                        color: #fc6c85;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,102 @@
+$adminMainColor: #AF011C;
+$adminMainBackColor: #fff8f8;
+$adminSubColor:#e96464;
+
+#main {
+
+    #watched_articles,
+    #liked_articles {
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        .table {
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border-top: 1px solid $adminMainColor;
+                border-left: 1px solid $adminMainColor;
+                font-size: 12px;
+                table-layout: fixed;
+
+                td {
+                    border-bottom: 1px solid $adminMainColor;
+                    border-right: 1px solid $adminMainColor;
+                    padding: 3px;
+                    white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+
+                    &.head {
+                        text-align: center;
+                        color: #fff;
+                        font-weight: bold;
+                        background: $adminSubColor;
+                    }
+
+                    &.body_center {
+                        text-align: center;
+                    }
+
+                    &.order {
+                        width: 25px !important;
+                        background: $adminMainColor;
+                    }
+                }
+            }
+            .table_separate {
+                padding: 10px;
+            }
+        }
+    }
+
+    #watched_parts_direct,
+    #watched_parts_included {
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        .table {
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                border-top: 1px solid $adminMainColor;
+                border-left: 1px solid $adminMainColor;
+                font-size: 12px;
+                table-layout: fixed;
+
+                td {
+                    border-bottom: 1px solid $adminMainColor;
+                    border-right: 1px solid $adminMainColor;
+                    padding: 3px;
+                    white-space:nowrap;
+                    overflow:hidden;
+                    text-overflow:ellipsis;
+
+                    &.head {
+                        text-align: center;
+                        color: #fff;
+                        font-weight: bold;
+                        background: $adminMainColor;
+                        text-align: center;
+                    }
+
+                    &.order {
+                        width: 20%;
+                        background: $adminSubColor;
+                        text-align: center;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .table_separate {
+                padding: 10px;
+            }
+        }
+    }
+}

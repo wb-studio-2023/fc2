@@ -1,0 +1,41 @@
+$mainFontColor: #373737;
+$inactiveFontColor: #cccccc;
+
+body {
+    main {
+        .actress_intro {
+            padding: 15px;
+            display: flex;
+
+            .intro_left {
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+
+            .intro_right {
+                font-size: 14px;
+                padding: 0 10px;
+
+                .actress_name {
+                    margin-bottom: 5px;
+                }
+
+                .actress_introduction {
+                    p {
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+
+        .actress_article_list_title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            border-bottom: 3px solid #373737;
+            margin: 25px 0px;
+        }
+    }
+}

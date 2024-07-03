@@ -1,0 +1,1 @@
+{"version":3,"file":"css/front/pc/common.css","mappings":"AAIA;EACI;EACA;AAHJ,C","sources":["webpack:///./resources/scss/front/pc/common.scss"],"sourcesContent":["$frontMainColor: #AF011C;\r\n$frontMainBackColor: #fff8f8;\r\n$frontSubColor:#e96464;\r\n\r\nbody {\r\n    margin: 0;\r\n    font-family: 'M PLUS Rounded 1c';\r\n}\r\n\r\n"],"names":[],"sourceRoot":""}

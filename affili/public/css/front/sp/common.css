@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: "M PLUS Rounded 1c";
+}
+body header {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition: transform 0.5s 0.2s;
+}
+body header.hidden {
+  transform: translateY(-100px);
+}
+body header .header_upper {
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+body header .header_upper .header_upper_left img.logo_mark {
+  width: 40px;
+  vertical-align: bottom;
+}
+body header .header_upper .header_upper_left img.logo_type {
+  width: 160px;
+  vertical-align: initial;
+}
+body header .header_upper .header_upper_right {
+  display: flex;
+  padding-top: 8.5px;
+}
+body header .header_upper .header_upper_right a {
+  text-align: center;
+  text-align: -webkit-center;
+  text-decoration: none;
+  padding-right: 5px;
+  color: #373737;
+}
+body header .header_upper .header_upper_right a img {
+  width: 20px;
+  display: block;
+}
+body header .header_upper .header_upper_right a span {
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+body header .header_downner {
+  height: 50px;
+  padding: 5px 11px;
+  align-items: center;
+}
+body header .header_downner form {
+  display: inline-block;
+  width: 80%;
+}
+body header .header_downner form input[type=text] {
+  height: 35px;
+  vertical-align: -webkit-baseline-middle;
+  width: 80%;
+}
+body header .header_downner form button {
+  background: #FFF;
+  border: none;
+  vertical-align: -webkit-baseline-middle;
+}
+body header .header_downner form button img {
+  width: 20px;
+}
+body header .header_downner a {
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+  font-size: 11.5px;
+}
+body main {
+  padding-top: 100px;
+}
+body main section {
+  margin-bottom: 60px;
+}
+body main .swiper {
+  height: 40vw;
+  max-height: 600px;
+  min-height: 400px;
+}
+body main .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+body main .swiper .swiper-slide img {
+  align-self: center;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+/*# sourceMappingURL=common.css.map*/

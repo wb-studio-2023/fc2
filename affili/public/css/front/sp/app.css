@@ -1,0 +1,392 @@
+body {
+  margin: 0;
+  font-family: "M PLUS Rounded 1c";
+}
+body header {
+  background-color: #fff;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  transition: transform 0.5s 0.2s;
+}
+body header.hidden {
+  transform: translateY(-100px);
+}
+body header .header_upper {
+  height: 50px;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+body header .header_upper .header_upper_left img.logo_mark {
+  width: 40px;
+  vertical-align: bottom;
+}
+body header .header_upper .header_upper_left img.logo_type {
+  width: 160px;
+  vertical-align: initial;
+}
+body header .header_upper .header_upper_right {
+  display: flex;
+  padding-top: 8.5px;
+}
+body header .header_upper .header_upper_right a {
+  text-align: center;
+  text-align: -webkit-center;
+  text-decoration: none;
+  padding-right: 5px;
+  color: #373737;
+  height: 44px;
+}
+body header .header_upper .header_upper_right a img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+body header .header_upper .header_upper_right a span {
+  font-size: 11.5px;
+  line-height: 1.4;
+  height: 16px;
+}
+body header .header_upper .header_upper_right span.span_mune {
+  font-size: 11.5px;
+  line-height: 1.4;
+  position: relative;
+  top: 26px;
+  height: 16px;
+}
+body header .header_downner {
+  height: 50px;
+  padding: 5px 11px;
+  align-items: center;
+}
+body header .header_downner form {
+  display: inline-block;
+  width: 80%;
+}
+body header .header_downner form input[type=text] {
+  height: 35px;
+  vertical-align: -webkit-baseline-middle;
+  width: 80%;
+}
+body header .header_downner form button {
+  background: #FFF;
+  border: none;
+  vertical-align: -webkit-baseline-middle;
+}
+body header .header_downner form button img {
+  width: 20px;
+}
+body header .header_downner .detailed_search {
+  display: inline-block;
+}
+body header .header_downner .detailed_search .open {
+  position: relative;
+  top: 3px;
+  right: 8px;
+}
+body header .header_downner .detailed_search .modal_wrap input {
+  display: none;
+}
+body header .header_downner .detailed_search .modal_wrap input:checked ~ .modal_overlay {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s;
+}
+body header .header_downner .detailed_search .modal_wrap input:checked ~ .modal_overlay .modal_content {
+  transform: scale(1);
+}
+body header .header_downner .detailed_search .modal_wrap .modal_overlay {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0s 0.5s;
+  transform: scale(0);
+}
+body header .header_downner .detailed_search .modal_wrap .modal_overlay .modal_trigger {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+body header .header_downner .detailed_search .modal_wrap .modal_overlay .modal_content {
+  align-self: center;
+  width: 85%;
+  max-width: 800px;
+  padding: 30px 30px 15px;
+  box-sizing: border-box;
+  background: #fff;
+  line-height: 1.4em;
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+body header .header_downner .detailed_search .modal_wrap .modal_overlay .modal_content .close_button {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+}
+body header #menu .open {
+  position: fixed;
+  z-index: 9999;
+  top: -7px;
+  right: 7px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+body header #menu .open span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #373737;
+  width: 45%;
+}
+body header #menu .open span:nth-of-type(1) {
+  top: 15px;
+}
+body header #menu .open span:nth-of-type(2) {
+  top: 23px;
+}
+body header #menu .open span:nth-of-type(3) {
+  top: 31px;
+}
+body header #menu .open.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%;
+}
+body header #menu .open.active span:nth-of-type(2) {
+  opacity: 0;
+}
+body header #menu .open.active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%;
+}
+body header #menu .open.hidden {
+  transform: translateY(-100px);
+}
+body header #menu .nav {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: -120%;
+  width: 100%;
+  height: 100vh;
+  background: #FFF;
+  transition: all 0.6s;
+}
+body header #menu .nav.panelactive {
+  right: 0;
+}
+body header #menu .nav.panelactive #g-nav-list {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+body header #menu .nav ul {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body header #menu .nav ul li {
+  list-style: none;
+  text-align: center;
+}
+body header #menu .nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+body main {
+  padding-top: 100px;
+}
+body main section {
+  margin-bottom: 60px;
+}
+body main section .section_title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+body main .swiper {
+  height: 40vw;
+  max-height: 600px;
+  min-height: 400px;
+}
+body main .swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+body main .swiper .swiper-slide img {
+  align-self: center;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+}
+
+body main .list_select .tab {
+  display: flex;
+}
+body main .list_select .tab .ingredient_tab,
+body main .list_select .tab .category_tab {
+  width: 50%;
+  height: 40px;
+  color: #cccccc;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  border-bottom: 4px solid #cccccc;
+}
+body main .list_select .tab .active {
+  color: #373737;
+  border-bottom: 4px solid #373737;
+}
+body main .list_select .detail_list .ingredient_list,
+body main .list_select .detail_list .category_list {
+  margin: 20px 10px;
+  display: none;
+}
+body main .list_select .detail_list .ingredient_list .list_item,
+body main .list_select .detail_list .category_list .list_item {
+  display: inline-block;
+  padding: 10px 8px;
+}
+body main .list_select .detail_list .ingredient_list .list_item a,
+body main .list_select .detail_list .category_list .list_item a {
+  color: #373737;
+  text-decoration: none;
+  border-bottom: 1px dashed #373737;
+}
+body main .list_select .detail_list .ingredient_list .list_item a.more img,
+body main .list_select .detail_list .category_list .list_item a.more img {
+  width: 26px;
+  height: 10px;
+  position: relative;
+  top: 1px;
+  right: 5px;
+}
+body main .list_select .detail_list .active {
+  display: block;
+}
+body main .list_grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  padding: 0 4px;
+  list-style: none;
+}
+body main .list_grid li {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  padding: 0 4px;
+  width: 50%;
+}
+body main .list_grid li a {
+  text-decoration: none;
+}
+body main .list_grid li a .image_wrapper {
+  overflow: hidden;
+}
+body main .list_grid li a .image_wrapper img {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  width: 100%;
+}
+body main .list_grid li a p {
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #373737;
+  font-weight: bold;
+}
+body main .list_vertical {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+body main .list_vertical li {
+  padding-top: 0;
+  border-bottom: 1px solid #dddbd6;
+  padding: 6px 0;
+}
+body main .list_vertical li a {
+  text-decoration: none;
+  display: flex;
+}
+body main .list_vertical li a .image_wrapper {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+body main .list_vertical li a .image_wrapper img {
+  width: 100px;
+  height: auto;
+  border-radius: 6px;
+  aspect-ratio: 1/1;
+}
+body main .list_vertical li a p {
+  font-weight: 600;
+  line-height: 125%;
+  color: #373737;
+  margin: 5px 0 0 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+body main .btn_more {
+  text-align: center;
+}
+body main .btn_more a {
+  color: #373737;
+  font-weight: bold;
+  padding: 1px 2px;
+  text-decoration: none;
+}
+body main .btn_more a img {
+  width: 16px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+/*# sourceMappingURL=app.css.map*/

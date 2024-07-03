@@ -1,0 +1,146 @@
+#main h2 {
+  margin-bottom: 5px;
+}
+#main .table_separate {
+  padding: 25px;
+}
+#main .button_area {
+  text-align: center;
+}
+#main .button_area button {
+  margin: 0 10px;
+  border: 1px solid #AF011C;
+  border-radius: 5px;
+  background: #fff8f8;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#main .button_area button:hover {
+  color: #fff;
+  background: #e96464;
+}
+#main #list .query_area {
+  display: flex;
+  justify-content: space-between;
+}
+#main #list .query_area .create {
+  padding: 3px;
+}
+#main #list .query_area .create a {
+  color: #AF011C;
+}
+#main #list .query_area form input[type=text] {
+  height: 26px;
+}
+#main #list .query_area form button {
+  border: 1px solid #AF011C;
+  color: #AF011C;
+  border-radius: 3px;
+  background: #fff8f8;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+#main #list .query_area form button:hover {
+  color: #fff;
+  background: #e96464;
+}
+#main #list .query_area form a {
+  text-decoration: none;
+  border: 1px solid #AF011C;
+  color: #AF011C;
+  border-radius: 3px;
+  font-size: 13.3px;
+  padding: 2px 5px;
+}
+#main #list .query_area form a:hover {
+  color: #fff;
+  background: #e96464;
+}
+#main #list .list_area table {
+  border-top: 1px solid #AF011C;
+  border-left: 1px solid #AF011C;
+  font-size: 12px;
+  table-layout: fixed;
+}
+#main #list .list_area table thead tr td {
+  text-align: center;
+  background: #e96464;
+  border-bottom: 1px solid #AF011C;
+  border-right: 1px solid #AF011C;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px;
+}
+#main #list .list_area table thead tr td a {
+  text-decoration: none;
+  color: #fff;
+}
+#main #list .list_area table thead tr td span.search_now {
+  color: #AF011C;
+}
+#main #list .list_area table tbody tr td {
+  text-align: center;
+  border-bottom: 1px solid #AF011C;
+  border-right: 1px solid #AF011C;
+  padding: 3px;
+}
+#main #list .list_area table tbody tr td.left {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#main #list .list_area #pagination {
+  text-align: center;
+  padding: 10px;
+}
+#main #list .list_area #pagination span a {
+  color: #fff;
+  background: #e96464;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+#main #list .list_area #pagination span.select {
+  font-size: 12px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  border: 1px solid #AF011C;
+}
+#main #regist .validation,
+#main #edit .validation {
+  color: #9c1e1e;
+  font-size: 12px;
+  font-weight: bold;
+}
+#main #regist table,
+#main #edit table {
+  width: 100%;
+  border-top: 1px solid #AF011C;
+}
+#main #regist table tbody th,
+#main #edit table tbody th {
+  background: #e96464;
+  color: #fff;
+  border-right: 1px solid #AF011C;
+  border-bottom: 1px solid #AF011C;
+}
+#main #regist table tbody td,
+#main #edit table tbody td {
+  padding: 5px;
+  border-bottom: 1px solid #AF011C;
+}
+#main #regist table tbody td input[name=name],
+#main #edit table tbody td input[name=name] {
+  width: 100%;
+  height: 30px;
+}
+#main #regist table tbody td textarea[name=effect],
+#main #edit table tbody td textarea[name=effect] {
+  width: 100%;
+  height: 100px;
+  resize: vertical;
+}
+
+/*# sourceMappingURL=category.css.map*/

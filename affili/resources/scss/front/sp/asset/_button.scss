@@ -1,0 +1,24 @@
+$mainFontColor: #373737;
+$inactiveFontColor: #cccccc;
+
+body {
+    main {
+        .btn_more {
+            text-align: center;
+
+            a {
+                color: $mainFontColor;
+                font-weight: bold;
+                padding: 1px 2px;
+                text-decoration: none;
+
+                img {
+                    width: 16px;
+                    vertical-align: middle;
+                    position: relative;
+                    top: -1px;
+                }
+            }
+        }        
+    }
+}

@@ -1,0 +1,206 @@
+$mainFontColor: #373737;
+$inactiveFontColor: #cccccc;
+
+body {
+    main {
+        .list_select {
+            .detail_list {
+                .simple_list {
+                    margin: 0px 10px 20px;
+
+                    .list_item {
+                        display: inline-block;
+                        padding: 10px 8px;
+
+                        a {
+                            color: $mainFontColor;
+                            text-decoration: none;
+                            border-bottom: 1px dashed #373737;
+
+                            &.more {
+                                img {
+                                    width: 26px;
+                                    height: 10px;
+                                    position: relative;
+                                    top: 1px;
+                                    right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .list_grid {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            padding: 0 4px;
+            list-style: none;
+
+            li {
+                box-sizing: border-box;
+                margin-bottom: 24px;
+                padding: 0 4px;
+                width: 50%;
+
+                a {
+                    text-decoration: none;
+
+                    .image_wrapper {
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                            left: 0;
+                            object-fit: cover;
+                            top: 0;
+                            width: 100%;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        color: $mainFontColor;
+                        font-weight: bold;
+                    }
+                }            
+            }
+        }
+        .list_article_grid {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            padding: 0 4px;
+            list-style: none;
+
+            li {
+                box-sizing: border-box;
+                margin-bottom: 24px;
+                padding: 0 10px;
+                width: 25%;
+
+                a {
+                    text-decoration: none;
+
+                    .image_wrapper {
+                        overflow: hidden;
+
+                        img {
+                            aspect-ratio: 1/1;
+                            left: 0;
+                            object-fit: cover;
+                            top: 0;
+                            width: 100%;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        color: $mainFontColor;
+                        font-weight: bold;
+                        font-size: 14px;
+                    }
+                }            
+            }
+        }
+        .list_actress_grid {
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            padding: 0 4px;
+            list-style: none;
+
+            li {
+                box-sizing: border-box;
+                margin-bottom: 24px;
+                padding: 0 10px;
+                width: 20%;
+
+                a {
+                    text-decoration: none;
+
+                    .image_wrapper {
+                        overflow: hidden;
+
+                        img {
+                            height: 100%;
+                            left: 0;
+                            object-fit: cover;
+                            top: 0;
+                            width: 100%;
+                        }
+                    }
+
+                    p {
+                        margin: 0;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                        color: $mainFontColor;
+                        font-size: 14px;
+                    }
+                }            
+            }
+        }
+
+        .list_vertical {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+
+            li {
+                padding-top: 0;
+                border-bottom: 1px solid #dddbd6;
+                padding: 6px 0;
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+
+                    .image_wrapper {
+                        width: auto;
+                        height: auto;
+                        position: relative;
+    
+                        img {
+                            width: 100px;
+                            height: auto;
+                            border-radius: 6px;
+                            aspect-ratio: 1/1;
+                        }
+                    }
+    
+                    p {
+                        font-weight: 600;
+                        line-height: 125%;
+                        color: $mainFontColor;
+                        margin: 5px 0 0 5px;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+

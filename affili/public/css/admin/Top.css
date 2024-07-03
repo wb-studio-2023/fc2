@@ -1,0 +1,85 @@
+#main #watched_articles h2,
+#main #liked_articles h2 {
+  margin-bottom: 5px;
+}
+#main #watched_articles .table table,
+#main #liked_articles .table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #AF011C;
+  border-left: 1px solid #AF011C;
+  font-size: 12px;
+  table-layout: fixed;
+}
+#main #watched_articles .table table td,
+#main #liked_articles .table table td {
+  border-bottom: 1px solid #AF011C;
+  border-right: 1px solid #AF011C;
+  padding: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#main #watched_articles .table table td.head,
+#main #liked_articles .table table td.head {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  background: #e96464;
+}
+#main #watched_articles .table table td.body_center,
+#main #liked_articles .table table td.body_center {
+  text-align: center;
+}
+#main #watched_articles .table table td.order,
+#main #liked_articles .table table td.order {
+  width: 25px !important;
+  background: #AF011C;
+}
+#main #watched_articles .table .table_separate,
+#main #liked_articles .table .table_separate {
+  padding: 10px;
+}
+#main #watched_parts_direct h2,
+#main #watched_parts_included h2 {
+  margin-bottom: 5px;
+}
+#main #watched_parts_direct .table table,
+#main #watched_parts_included .table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #AF011C;
+  border-left: 1px solid #AF011C;
+  font-size: 12px;
+  table-layout: fixed;
+}
+#main #watched_parts_direct .table table td,
+#main #watched_parts_included .table table td {
+  border-bottom: 1px solid #AF011C;
+  border-right: 1px solid #AF011C;
+  padding: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#main #watched_parts_direct .table table td.head,
+#main #watched_parts_included .table table td.head {
+  color: #fff;
+  font-weight: bold;
+  background: #AF011C;
+  text-align: center;
+}
+#main #watched_parts_direct .table table td.order,
+#main #watched_parts_included .table table td.order {
+  width: 20%;
+  background: #e96464;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+#main #watched_parts_direct .table .table_separate,
+#main #watched_parts_included .table .table_separate {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=top.css.map*/
